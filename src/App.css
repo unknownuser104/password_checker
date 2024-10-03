@@ -1,0 +1,16 @@
+/* Ensure the app-container uses full height and removes any potential margins or paddings */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensure padding/margin are included in height/width calculations */
+}
